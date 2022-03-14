@@ -1,0 +1,58 @@
+/*grid*/
+// grid
+.grid{
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+                         "texto   texto  img1"
+                         "img2    img3  img4";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 60% auto;
+    justify-items: center;
+    align-items: center;
+
+    .titulo{
+        grid-area: titulo;
+    }
+    .texto{
+        grid-area: texto;
+        text-align: justify;
+        margin: 15px;
+        color: blue;
+    }
+    #carouselExampleSlidesOnly{
+        grid-area: img1;
+    }
+    /* .casa1{
+    //     grid-area: img1;
+     }*/
+    .casa2{
+        grid-area: img2;
+    }
+    .casa3{
+        grid-area: img3;
+       
+    }
+    .casa4{
+        grid-area: img4;
+    }
+    img{
+        width: 80%;
+        height: 80%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .grid{
+        display: grid;
+        grid-template-areas: "titulo titulo "
+                             "texto  texto "
+                             "img1   img2"
+                             "img3  img4";
+    
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 50% 20% 20%;
+        justify-items: center;
+        align-items: center;
+    }
+    
+}

@@ -1,3 +1,21 @@
 header{
     background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+        width: 10%;
+    }
+    nav{
+        div{
+            div{
+                ul{
+                    .hover{
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+    }
 }
